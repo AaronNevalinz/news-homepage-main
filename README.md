@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://aaronnevalinz.github.io/news-homepage-main/)
+- [Live Site URL] (https://aaronnevalinz.github.io/news-homepage-main/)
 
 ### Built with
 
