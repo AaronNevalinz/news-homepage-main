@@ -6,33 +6,33 @@
     <title>news homepage main</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <div class="w-[95%] lg:w-[80%] mx-auto">
+<body class="relative">
+    <div class="w-[95%] lg:w-[75%] mx-auto">
         <!-- navigation -->
         <header class="py-6 md:flex justify-between">
             <div class="flex justify-between">
                 <img class="w-7" src="./assets/images/logo.svg" alt="logo">
-                <div class="md:hidden">
-                    <img src="./assets/images/icon-menu.svg" alt="icon menu">
-                    <img class="hidden" src="./assets/images/icon-menu-close.svg" alt=" icon-menu-close">
+                <div class="md:hidden cursor-pointer">
+                    <img src="./assets/images/icon-menu.svg" alt="icon menu" id="hambuger">
+                    <img class="hidden fixed top-0 pr-6 pt-4 right-0 z-50" src="./assets/images/icon-menu-close.svg" id="menu-close" alt=" icon-menu-close">
                 </div>
             </div>
-            <nav class="hidden md:block">
-                <ul class="text-right md:flex gap-8">
-                    <li class="">
-                        <a href="#" class="hover:text-primary-200">Home</a>
+            <nav class="hidden fixed md:static bg-white md:bg-transparent top-0 right-0 w-[70%] md:w-auto overscroll-contain z-40 h-full md:block" id="nav-menu">
+                <ul class="md:flex gap-8 absolute md:static top-36 pl-8 md:pl-0">
+                    <li class="mb-6 md:mb-0">
+                        <a href="#" class="hover:text-primary-200 font-medium text-base">Home</a>
                     </li>
-                    <li class="">
-                        <a href="#" class="hover:text-primary-200">New</a>
+                    <li class="mb-6 md:mb-0">
+                        <a href="#" class="hover:text-primary-200 font-medium text-base">New</a>
                     </li>
-                    <li class="">
-                        <a href="#" class="hover:text-primary-200">Popular</a>
+                    <li class="mb-6 md:mb-0">
+                        <a href="#" class="hover:text-primary-200 font-medium text-base">Popular</a>
                     </li>
-                    <li class="">
-                        <a href="#" class="hover:text-primary-200">Trending</a>
+                    <li class="mb-6 md:mb-0">
+                        <a href="#" class="hover:text-primary-200 font-medium text-base">Trending</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-primary-200">Categores</a>
+                    <a href="#" class="hover:text-primary-200 font-medium text-base">Categores</a>
                     </li>
                 </ul>
             </nav>
@@ -56,25 +56,25 @@
                     </div>
                 </div>
 
-                <div class="col-span-1 bg-secondary-400 md:my-0 my-20 py-8 md:py-4 px-4 text-secondary-100">
+                <div class="col-span-1 bg-secondary-400 md:my-0 my-20 py-8 md:py-4 lg:py-8 px-4 text-secondary-100">
                     
                     <h1 class="text-primary-100 font-bold text-4xl">New</h1>
 
-                    <div class="py-8 md:py-4">
+                    <div class="py-8 md:py-4 lg:py-8">
                         <h4 class="mb-2 font-medium cursor-pointer hover:text-primary-100">Hydrogen VS Electric Cars</h4>
                         <p class="text-secondary-300">Will hydrogen-fueled cars ever catch up to EVs?</p>
                     </div>
                     <hr class="h-[0.2px] bg-secondary-300">
 
                     
-                    <div class="py-8 md:py-4">
+                    <div class="py-8 md:py-4 lg:py-8">
                         <h4 class="mb-2 font-medium cursor-pointer hover:text-primary-100">The Downsides of AI Artistry</h4>
                         <p class="text-secondary-300">What are the possible adverse effects of on-demand AI image generation</p>
                     </div>
 
                     <hr>
 
-                    <div class="py-8 md:py-4">
+                    <div class="py-8 md:py-4 lg:py-8">
                         <h4 class="mb-2 font-medium cursor-pointer hover:text-primary-100">Is VC Funding Drying Up?</h4>
                         <p class="text-secondary-300">Private funding by VC firms is down 50% YOY. We take a look at what that means</p>
                     </div>
@@ -114,5 +114,12 @@
             </div>
         </main>
     </div>
+
+    <div id="overlay" class="fixed top-0 bg-black opacity-50 overflow-y-hidden h-full w-full z-10 hidden">
+
+    </div>
+
+    <!--js scripts  -->
+    <script src="./index.js"></script>
 </body>
 </html>
