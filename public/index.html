@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="w-[95%] mx-auto">
+    <div class="w-[95%] lg:w-[80%] mx-auto">
         <!-- navigation -->
         <header class="py-6 md:flex justify-between">
             <div class="flex justify-between">
@@ -40,23 +40,23 @@
 
         <!-- main body - content -->
         <main class="pb-8">
-            <div class="md:flex gap-4">
+            <div class="md:grid grid-cols-3 gap-4">
 
-                <div>
+                <div class="col-span-2">
                     <img class="hidden md:block" src="./assets/images/image-web-3-desktop.jpg" alt="">
-                    <img class="md:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="">
-                    <div class="">
-                        <h1 class="text-secondary-400 font-bold text-6xl my-3">The Bright Future of Web 3.0</h1>
-                        <div>
+                    <img class="md:hidden w-full" src="./assets/images/image-web-3-mobile.jpg" alt="">
+                    <div class="lg:grid grid-cols-2 mt-3 items-center gap-4">
+                        <h1 class="text-secondary-400 font-bold text-6xl my-3 ">The Bright Future of Web 3.0</h1>
+                        <div class="">
                             <p class="text-secondary-300 mb-3">
                                 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise 
                             </p>
-                            <button class="text-secondary-100 bg-secondary-400 hover:bg-primary-200 py-2 px-8 tracking-widest mt-2 cursor-pointer">READ MORE</button>
+                            <button class="text-secondary-100 bg-secondary-400 hover:bg-primary-200 py-2 px-8 tracking-widest mt-10 cursor-pointer">READ MORE</button>
                         </div>
                     </div>
                 </div>
 
-                <div class=" bg-secondary-400 md:my-0 my-20 py-8 md:py-4 px-4 text-secondary-100">
+                <div class="col-span-1 bg-secondary-400 md:my-0 my-20 py-8 md:py-4 px-4 text-secondary-100">
                     
                     <h1 class="text-primary-100 font-bold text-4xl">New</h1>
 
@@ -84,30 +84,30 @@
 
             <div class="flex flex-col md:flex-row md:mt-8 md:gap-7 gap-10">
 
-                <div class="flex  gap-8 md:gap-2">
+                <div class="flex  gap-8 md:gap-2 lg:gap-4">
                     <img class="h-[150px]" src="./assets/images/image-retro-pcs.jpg" alt="">
-                    <div class="flex md:block flex-col justify-between">
-                        <h1 class="text-secondary-200 font-bold text-5xl md:text-xl">01</h1>
-                        <h4 class="font-bold text-lg md:text-base text-secondary-400 cursor-pointer hover:text-primary-200">Reviving Retro PCs</h4>
-                        <p class="text-secondary-300 md:text-sm">What happens when old PCs are given modern upgrades</p>
+                    <div class="flex md:block lg:flex flex-col justify-between">
+                        <h1 class="text-secondary-200 font-bold text-5xl md:text-xl lg:text-3xl">01</h1>
+                        <h4 class="font-bold text-lg md:text-base text-secondary-400 cursor-pointer hover:text-primary-200 lg:text-lg">Reviving Retro PCs</h4>
+                        <p class="text-secondary-300 md:text-sm lg:text-[15px]">What happens when old PCs are given modern upgrades</p>
                     </div>
                 </div>
 
-                <div class="flex gap-8 md:gap-2">
+                <div class="flex gap-8 md:gap-2 lg:gap-4">
                     <img class="h-[150px]" src="./assets/images/image-top-laptops.jpg" alt="">
-                    <div class="flex md:block flex-col justify-between">
-                        <h1 class="text-secondary-200 font-bold text-5xl md:text-xl">02</h1>
-                        <h4 class="font-bold text-lg md:text-base text-secondary-400 cursor-pointer hover:text-primary-200">Top 10 Laptops of 2022</h4>
-                        <p class="text-secondary-300 md:text-sm">Our best picks for various needs and budgets.</p>
+                    <div class="flex md:block lg:flex flex-col justify-between">
+                        <h1 class="text-secondary-200 font-bold text-5xl lg:text-3xl md:text-xl">02</h1>
+                        <h4 class="font-bold text-lg md:text-base text-secondary-400 cursor-pointer hover:text-primary-200 lg:text-lg">Top 10 Laptops of 2022</h4>
+                        <p class="text-secondary-300 md:text-sm lg:text-[15px]">Our best picks for various needs and budgets.</p>
                     </div>
                 </div>
 
-                <div class="flex gap-8 md:gap-2">
+                <div class="flex gap-8 md:gap-2 lg:gap-4">
                     <img class="h-[150px]" src="./assets/images/image-gaming-growth.jpg" alt="">
-                    <div class="flex md:block flex-col justify-between">
-                        <h1 class="text-5xl font-bold text-secondary-200 md:text-xl">03</h1>
-                        <h4 class="font-bold text-lg md:text-base text-secondary-400 cursor-pointer hover:text-primary-200">The Growth of Gaming</h4>
-                        <p class="text-secondary-300 md:text-sm">How the pandemic has sparked fresh opportunities.</p>
+                    <div class="flex md:block lg:flex flex-col justify-between">
+                        <h1 class="text-5xl font-bold text-secondary-200 lg:text-3xl md:text-xl">03</h1>
+                        <h4 class="font-bold text-lg md:text-base text-secondary-400 cursor-pointer hover:text-primary-200 lg:text-lg">The Growth of Gaming</h4>
+                        <p class="text-secondary-300 md:text-sm lg:text-[15px]">How the pandemic has sparked fresh opportunities.</p>
                     </div>
                 </div>
 
